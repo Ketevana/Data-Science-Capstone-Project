@@ -78,9 +78,17 @@ Overall, I've removed all null values except description column, cleaned each co
 
 ## EDA
 
-This visualisation shows each data point of Hermes brand in my dataset.
+* This visualisation shows each data point of Hermes brand in my dataset.
+
 ![Hermes data points 3D](images/h3d.gif)
 
+* Here are all Louis Vuitton observations
+
+![LV data points 3D](images/lv.gif)
+
+* Here are each Chanel data points 
+
+![CC data points 3D](images/cc.gif)
 
 
 Next I performed thorough EDA to get to know the data, the distributions of the features and the correlations between them.
