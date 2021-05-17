@@ -78,15 +78,15 @@ Overall, I've removed all null values except description column, cleaned each co
 
 ## EDA
 
-* This visualisation shows each data point of Hermes brand in my dataset.
+* This visualisation shows each data point of Hermes brand in my dataset / Comparison of handbag prices
 
 ![Hermes data points 3D](images/h3d.gif)
 
-* Here are all Louis Vuitton observations
+* Here are all Louis Vuitton observations / Comparison of Mean Retail Price with Resale Price and Discounted Resale Price
 
 ![LV data points 3D](images/lv.gif)
 
-* Here are each Chanel data points 
+* Here are each Chanel data / Comparison of 3 prices across each data points 
 
 ![CC data points 3D](images/cc.gif)
 
