@@ -86,7 +86,7 @@ Overall, I've removed all null values except description column, cleaned each co
 
 ![LV data points 3D](images/lv.gif)
 
-* Here are each Chanel data / Comparison of 3 prices across each data points 
+* Here are comparison of 3 prices across each data points of Chanel brand 
 
 ![CC data points 3D](images/cc.gif)
 
