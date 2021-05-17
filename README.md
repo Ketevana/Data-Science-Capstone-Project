@@ -151,7 +151,7 @@ I fitted a range of regression models on the training set and obtained R2 scores
 
 Finding the best model - Scores
 
-![Regression Models scoring](images/Models_Findings_Technical_Report.jpg)
+![Regression Models scoring](images/regr_scores.jpg)
 
 The simple Linear Regression model performs quite well with consistent train, test and mean CV scores.  Adding regularisation with the Ridge and Elastic Net models did not alter the results. The Gradient Boosting Regressor model showed significant improvement in R2 scores and errors.
 
