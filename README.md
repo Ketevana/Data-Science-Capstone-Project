@@ -188,12 +188,15 @@ Hermes and Chanel have such a strong influence in the fashion world that they 
 Key points to make your purchase a good investment:
 
 * Limited Editions
+
 Limited edition bags are an interesting prospect as they provide an excellent opportunity for investment, but only if the right styles are chosen. 
 
 * Patience is a Virtue
+
 One of the most important things to remember when purchasing an investment piece is patience. The wait after you have made the purchase. Don’t buy a bag and expect a return immediately. It may take a few years for your investment to grow, so be prepared to that. However, this doesn’t mean you can’t use your bag as long as you…
 
 * Maintain the Condition
+
 When reselling an investment piece, the most import factor in determining the resell price is the condition. If you keep your bag in pristine, excellent, or even very good condition you can expect an excellent return. However, if your bag is full of scratches or watermarks, you won’t get the most from your investment.
 
 To get the most resale value for your investment bag, invest in the holy trinity:
@@ -206,7 +209,8 @@ The Birkin is expected to only increase in value going forward. Its high retail 
 Kelly holds its value well in the secondary market just like the Birkin. Both bags are exclusive and difficult to procure. Due to its limited availability and high appeal. Anything that is hard to get is highly coveted.
 
 
-Recommended Price for your handbag for Resale
+* Recommended Price for your handbag for Resale
+
 ![Recommended price_function](images/return_recommended_price.gif)
 
 
