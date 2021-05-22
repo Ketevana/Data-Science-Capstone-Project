@@ -35,7 +35,7 @@ Data acquired:
 * included categorical feature such as sold out on the resale webpage and bags that are still available online 
 
 
-The code used for web scraping is included in this notebook - [Handbag Data Collector](Part 2/Web_Scraping_Data_Cleaning.ipynb)
+The code used for web scraping is included in this notebook - [Handbag Data Collector](Part_2/Web_Scraping_Data_Cleaning.ipynb)
 
 
 ## Data Cleaning
@@ -94,7 +94,7 @@ Overall, I've removed all null values except the description column, cleaned eac
 
 Next I performed thorough EDA to get to know the data, the distributions of the features and the correlations between them.
 I have summarised the key findings and plots in the following notebook:
-[EDA_Visuals](Part 3/EDA_Data_Visualizations.ipynb)
+[EDA_Visuals](Part_3/EDA_Data_Visualizations.ipynb)
 
 ### The target
 
@@ -166,7 +166,7 @@ Classifier the best model - Scores
 ## Evaluation
 
 Examples of the best models and evaluation can be found in the following notebook:
-[Modelling_findings](Predictive_Models_Findings_Technical_Report.ipynb)
+[Modelling_findings](Part_4/Predictive_Models_Findings_Technical_Report.ipynb)
 
 
 ### Limitations
