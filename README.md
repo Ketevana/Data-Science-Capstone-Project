@@ -7,9 +7,9 @@ This project was completed as part of the Data Science Immersive course at Gener
 
 ## Goals
 
-The first goal is to accurately predict the resale value of designer handbags with Linear Regression model and reveal which coefficients has higher impact on predicting the secondary market price.
+The first goal is to accurately predict the resale value of designer handbags with Linear Regression model and reveal which coefficients have higher impact on predicting the secondary market price.
 
-The second goal is to build classification model to determine whether luxury handbag is a good investment or not, based on derivable variable, Return on Investment (ROI). Next aim is to view the predictive power of each feature and which features generate the best returns.
+The second goal is to build a classification model to determine whether a luxury handbag is a good investment or not, based on a derivable variable, Return on Investment (ROI). Next aim is to view the predictive power of each feature and which features generate the best returns.
 
 **Overall Approach**
 
@@ -22,13 +22,13 @@ The second goal is to build classification model to determine whether luxury han
 
 ## Acquire Data
 
-I used the Python libraries Requests and Beautiful Soup to scrape and parse results data published online. Initially I had hoped to collect data using API, but unfortunately, there weren’t any relevant API or ready collected datasets to implement my capstone project idea. After doing a research where to get the data, it wasn’t many webpages that has sufficient amount of data information or sites that wasn't blocking you from Web Scraping. I made my choice on Vestiaire Collective webpage. As well as extracting current mean Retail Price from original webpages or public magazines. 
+I used the Python libraries Requests and Beautiful Soup to scrape and parse results data published online. Initially I had hoped to collect data using an API, but unfortunately, there weren’t any relevant API or ready collected datasets to implement my capstone project idea. After doing research on where to get the data, there were not many webpages that had a sufficient amount of data information or sites that were not blocking you from Web Scraping. I have decided to choose the Vestiaire Collective website, as well as extracting the current Mean Retail Price from original webpages or public magazines. 
 
-I have decided to go only with 3 top brand in fashion industry and focused my attention to the iconic handbags in each of brand category.
+I have decided to go only with 3 top brands in the fashion industry and focused my attention on the iconic handbags in each brand category.
 
 Data acquired:
 * 3 Top brands in fashion industry
-* 14 features (-> 16 features at preparationg for modelling stage)
+* 14 features (-> 16 features at preparation for modelling stage)
 * 12,916 unique handbag observations (uncleaned)
 * limited edition feature only in Louis Vuitton brand to test one of my hypothesis regarding investment return
 * descriptions has been extracted only from Chanel and Hermes handbags
@@ -40,7 +40,8 @@ The code used for web scraping is included in this notebook - [Handbag Data Coll
 
 ## Data Cleaning
 
-Given the size of the dataset I removed repeated text to reduce filesize, storing athlete and event data in separate reference files, linked by Athlete ID and Event Index respectively.  This left the following columns:
+Given the size of the dataset, I removed repeated information from price_range, price and m_material columns to reduce the file size. 
+The following columns were left:
 
 | Column | Description |
 | --- | ----------- |
@@ -67,13 +68,13 @@ Data cleaning was, as always, a fairly long and iterative process so I will just
 
 * Retail price
 
-I had to extract a current retail price manually from brand webpages and public Magazines. Then I calculate the mean value of certain model and hard-coded it in my dataset in 'mean_retail_price' column.
+I had to extract a current retail price manually from brand web pages and public Magazines. Then I calculated the mean value of a certain model and hard-coded it in my dataset in 'mean_retail_price' column.
 
 * Discount price
 
 Checking some prices manually, many of them have typos or they weren't true prices. I have dropped very low resale prices for the purpose of modelling.
 
-Overall, I've removed all null values except description column, cleaned each column to have relevant values, extracted and converted string into integers, cleaned duplicates etc. The final dataset consists of 12774 observations. 
+Overall, I've removed all null values except the description column, cleaned each column to have relevant values, extracted and converted string into integers, cleaned duplicates etc. The final dataset consists of 12774 observations. 
 
 
 ## EDA
@@ -118,7 +119,7 @@ I derived 2 further features from the data to attempt to gain more information o
 
 * Feature selection
 
-I selected features that contained information about handbag but no lickage of information of it's Resale Price, then dummidfied the categorical columns.
+I selected features that contained information about the handbag and ensured that there was no leakage of information about its Resale Price, then dummidfied the categorical columns.
 
 predictors_reg = ['brand', 'n_likes', 'limited', 'condition', 'm_model', 'material', 
               'color', 'sold_out', 'mean_retail_price']
@@ -129,7 +130,7 @@ target_reg = ['final_resale_price']
 
 * Train-Test Split
 
-I applied an 70:30 train-test split to the data.
+I applied a 70:30 train-test split to the data.
 
 * Standardisation
 
@@ -147,7 +148,7 @@ I performed the same Train-Test Split with stratifying the target and Standardis
 
 ### Fitting and scoring models
 
-I fitted a range of regression models on the training set and obtained R2 scores for training and test set.  I performed 5-fold cross validation and obtained mean CV score to check the generalisability of the model, and also calculated RMSE of the predictions.
+I fitted a range of regression models on the training set and obtained R2 scores for the training and test set. I performed 5-fold cross validation and obtained the mean CV score of it to check the generalisability of the model, and also calculated RMSE of the predictions.
 
 Finding the best model - Scores
 
@@ -172,15 +173,15 @@ Examples of the best models and evaluation can be found in the following noteboo
 
 * Time info
 
-One of the biggest limitations was absence of the time when the handbag was made, it would be really cool to use time values to see the changes of pricing across all models over time. 
+One of the biggest limitations was the absence of the time when the handbag was made, it would be really cool to use time values to see the changes of pricing across all models over time. 
 
 I would like to answer the questions, like:
 * What is a good investment over time?
-* How much time you need for it to raise or drop in value?
-* How long should I hold bag before sale?
-* How do iconic value change over time? (predicting the value in the future)
+* How much time do you need for it to rise or drop in value?
+* How long should I hold a bag before selling it?
+* How does the iconic handbag value change over time? (predicting the value in the future)
 
-Hermes and Chanel have such a strong influence in the fashion world that they have the ability to rapidly increase prices in a short period of time 
+Hermes and Chanel have such a strong influence in the fashion world that they have the ability to rapidly increase prices in a short period of time 
 
 
 ## Conclusions
@@ -193,20 +194,22 @@ Limited edition bags are an interesting prospect as they provide an excellent op
 
 * Patience is a Virtue
 
-One of the most important things to remember when purchasing an investment piece is patience. The wait after you have made the purchase. Don’t buy a bag and expect a return immediately. It may take a few years for your investment to grow, so be prepared to that. However, this doesn’t mean you can’t use your bag as long as you…
+One of the most important things to remember when purchasing an investment piece is patience. Don’t buy a bag and expect an immediate return. It may take a few years for your investment to grow, so be prepared for that. However, this doesn’t mean you can’t use your bag as long as you maintain the condition.
 
 * Maintain the Condition
 
-When reselling an investment piece, the most import factor in determining the resell price is the condition. If you keep your bag in pristine, excellent, or even very good condition you can expect an excellent return. However, if your bag is full of scratches or watermarks, you won’t get the most from your investment.
+When reselling an investment piece, the most important factor in determining the resale price is the condition of the product. If you keep your bag in pristine, excellent, or even very good condition you can expect an excellent return. However, if your bag is full of scratches or watermarks, you won’t get the most from your investment.
 
 To get the most resale value for your investment bag, invest in the holy trinity:
 * Hermès Birkin and Kelly handbags with exotic leathers
 * Louis Vuitton handbags limited editions
 * Chanel Woc / Classic flaps
 
+![Holy trinity](images/htr.jpg)
+
 While the value of luxury handbags can fluctuate due to trends or buzz, these three iconic brands in certain styles have the most resale value.
 The Birkin is expected to only increase in value going forward. Its high retail price, limited availability, and strong presence on the secondary market demonstrate that it is still a highly coveted piece. 
-Kelly holds its value well in the secondary market just like the Birkin. Both bags are exclusive and difficult to procure. Due to its limited availability and high appeal. Anything that is hard to get is highly coveted.
+Kelly holds its value well in the secondary market just like the Birkin. Both bags are exclusive and difficult to procure due to its limited availability and high appeal. Anything that is hard to get is highly coveted.
 
 
 * Recommended Price for your handbag for Resale
@@ -214,9 +217,9 @@ Kelly holds its value well in the secondary market just like the Birkin. Both ba
 ![Recommended price_function](images/return_recommended_price.gif)
 
 
-Overall this has been an interesting and worthwhile project. A full range of regression and classification modelling techniques were employed and the models scored highly on the selected featured of the dataset. The next steps for this project would be:
+Overall this has been an interesting and worthwhile project. A full range of regression and classification modelling techniques were employed and the models scored highly on the selected feature of the dataset. The next steps for this project would be:
 - Add more detailed features of the date the handbag was made
-- Collect data on retail price of the handbag of certain year, retrain and evaluate the model.
+- Collect data on retail price of the handbag of a certain year, retrain and evaluate the model.
 - Use other techniques such as clustering and network analysis to identify handbag characteristics and features.
 
 If you found this project interesting and would like to discuss further then please feel free to contact me via Github or [LinkedIn](https://www.linkedin.com/in/dr-ketevana-barabadze/)
