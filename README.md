@@ -216,6 +216,7 @@ Kelly holds its value well in the secondary market just like the Birkin. Both ba
 
 ![Recommended price_function](images/return_recommended_price.gif)
 
+* Project Presentation - [link to presentation](https://docs.google.com/presentation/d/e/2PACX-1vQdfZQnS3l5SRDOtAVq1X5dTu2prK8tpXyrfGv_K-6ku75HGha7y-_RFJH0kjANc6_6hUQetg4o4pPQ/pub?start=true&loop=false&delayms=3000)
 
 Overall this has been an interesting and worthwhile project. A full range of regression and classification modelling techniques were employed and the models scored highly on the selected feature of the dataset. The next steps for this project would be:
 - Add more detailed features of the date the handbag was made
