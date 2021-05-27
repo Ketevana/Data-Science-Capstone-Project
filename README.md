@@ -31,7 +31,7 @@ Data acquired:
 * 14 features (-> 16 features at preparation for modelling stage)
 * 12,916 unique handbag observations (uncleaned)
 * limited edition feature only in Louis Vuitton brand to test one of my hypothesis regarding investment return
-* descriptions has been extracted only from Chanel and Hermes handbags
+* descriptions have been extracted only from Chanel and Hermes handbags
 * included categorical feature such as sold out on the resale webpage and bags that are still available online 
 
 
@@ -79,11 +79,11 @@ Overall, I've removed all null values except the description column, cleaned eac
 
 ## EDA
 
-* This visualisation shows each data point of Hermes brand in my dataset / Comparison of handbag prices
+* This visualisation shows each data point of Hermes brand in my dataset / comparison of handbag prices
 
 ![Hermes data points 3D](images/h3d.gif)
 
-* Here are all Louis Vuitton observations / Comparison of Mean Retail Price with Resale Price and Discounted Resale Price
+* Here are all Louis Vuitton observations / comparison of Mean Retail Price with Resale Price and Discounted Resale Price
 
 ![LV data points 3D](images/lv.gif)
 
@@ -92,13 +92,13 @@ Overall, I've removed all null values except the description column, cleaned eac
 ![CC data points 3D](images/cc.gif)
 
 
-Next I performed thorough EDA to get to know the data, the distributions of the features and the correlations between them.
+Next I performed a thorough EDA to get to know the data, the distributions of the features and the correlations between them.
 I have summarised the key findings and plots in the following notebook:
 [EDA_Visuals](Part_3/EDA_Data_Visualizations.ipynb)
 
 ### The target
 
-Regression models with the continuous numbers of resale value of designer handbags (‘final_resale_price’) as the first target 
+Regression models with the continuous numbers of resale value of designer handbags (‘final_resale_price’) as the first target.
 
 
 To define the second target variable for classification model, final resale price has been transformed into binary class "worth to buy" or "not worth to buy" assigned as 1 or 0 respectively, based on Return on Investment (ROI) above or below 0 in percentage.
@@ -108,9 +108,9 @@ To define the second target variable for classification model, final resale pric
 
 I derived 2 further features from the data to attempt to gain more information on investment returns.
 
-* The ROI column is a derived variable, calculated by subtracting the initial value of the investment from the final value of the investment (which equals the net return), then dividing this new number (the net return) by the cost of the investment, and, finally, multiplying it by 100, to get the percentage value.
+* The ROI column is a derived variable, calculated by subtracting the initial value of the investment from the final value of the investment (which equals the net return), then dividing this new number (the net return) by the cost of the investment, and finally, multiplying it by 100, to get the percentage value.
 
-* Binary classification target variable based on Return on Investment values (positive - 1, negative - 0)
+* Binary classification target variable based on Return on Investment values (positive - 1, negative - 0).
 
 
 ## Modelling
@@ -150,7 +150,7 @@ I performed the same Train-Test Split with stratifying the target and Standardis
 
 I fitted a range of regression models on the training set and obtained R2 scores for the training and test set. I performed 5-fold cross validation and obtained the mean CV score of it to check the generalisability of the model, and also calculated RMSE of the predictions.
 
-Finding the best model - Scores
+Regressor the best model scores:
 
 ![Regression Models scoring](images/regr_scores.jpg)
 
@@ -158,7 +158,7 @@ The simple Linear Regression model performs quite well with consistent train, te
 
 The Classification models have much stronger scores at predicting a designer handbag to be whether good investment or opposite. Baseline predictions for classification models is 0.678, whereas most models have Mean CV  𝑅2  train and  𝑅2  test scores of 0.83-0.84. The best performance has Grid Search Gradient Boosting Classifier with an Mean CV  𝑅2  score of 0.8449 on train data and an  𝑅2  score of 0.8518 on unseen data, which is really great.
 
-Classifier the best model - Scores
+Classifier the best model scores:
 
 ![Classifier Models scoring](images/clfbest_scores.jpg)
 
@@ -171,7 +171,7 @@ Examples of the best models and evaluation can be found in the following noteboo
 
 ### Limitations
 
-* Time info
+* Time information
 
 One of the biggest limitations was the absence of the time when the handbag was made, it would be really cool to use time values to see the changes of pricing across all models over time. 
 
@@ -181,7 +181,7 @@ I would like to answer the questions, like:
 * How long should I hold a bag before selling it?
 * How does the iconic handbag value change over time? (predicting the value in the future)
 
-Hermes and Chanel have such a strong influence in the fashion world that they have the ability to rapidly increase prices in a short period of time 
+Hermes and Chanel have such a strong influence in the fashion world that they have the ability to rapidly increase prices in a short period of time.
 
 
 ## Conclusions
@@ -219,8 +219,8 @@ Kelly holds its value well in the secondary market just like the Birkin. Both ba
 * Project Presentation - [link to presentation](https://docs.google.com/presentation/d/e/2PACX-1vQdfZQnS3l5SRDOtAVq1X5dTu2prK8tpXyrfGv_K-6ku75HGha7y-_RFJH0kjANc6_6hUQetg4o4pPQ/pub?start=true&loop=false&delayms=3000)
 
 Overall this has been an interesting and worthwhile project. A full range of regression and classification modelling techniques were employed and the models scored highly on the selected feature of the dataset. The next steps for this project would be:
-- Add more detailed features of the date the handbag was made
+- Add more detailed features of the date the handbag was made.
 - Collect data on retail price of the handbag of a certain year, retrain and evaluate the model.
 - Use other techniques such as clustering and network analysis to identify handbag characteristics and features.
 
-If you found this project interesting and would like to discuss further then please feel free to contact me via Github or [LinkedIn](https://www.linkedin.com/in/dr-ketevana-barabadze/)
+If you found this project interesting and would like to discuss further then please feel free to contact me via Github or [LinkedIn](https://www.linkedin.com/in/dr-ketevana-barabadze/).
