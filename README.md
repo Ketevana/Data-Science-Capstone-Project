@@ -94,11 +94,12 @@ Overall, I've removed all null values except the description column, cleaned eac
 
 Next I performed a thorough EDA to get to know the data, the distributions of the features and the correlations between them.
 
-* Here is representation of features network:
-
-<p align="center"><img src="images/features_network.gif" width="700"></p>
+* Below we can review the interconnection between features in dataset:
 
 <p align="center"><img src="images/Networks.gif" width="700"></p>
+
+<p align="center"><img src="images/features_network.gif" width="600"></p>
+
 
 I have summarised the key findings and plots in the following notebook:
 [EDA_Visuals](Part_3/EDA_Data_Visualizations.ipynb)
@@ -221,7 +222,7 @@ Kelly holds its value well in the secondary market just like the Birkin. Both ba
 
 * Recommended Price for your handbag for Resale
 
-<p align="center"><img src="images/return_recommended_price.gif" width="750"></p>
+<p align="center"><img src="images/return_recommended_price.gif" width="650"></p>
 
 * Project Presentation - [link to presentation](https://docs.google.com/presentation/d/e/2PACX-1vQdfZQnS3l5SRDOtAVq1X5dTu2prK8tpXyrfGv_K-6ku75HGha7y-_RFJH0kjANc6_6hUQetg4o4pPQ/pub?start=true&loop=false&delayms=3000)
 
