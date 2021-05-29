@@ -159,7 +159,7 @@ I fitted a range of regression models on the training set and obtained R2 scores
 
 Regressor the best model scores:
 
-![Regression Models scoring] <p align="center"><img src="images/regr_scores.jpg" width="400"></p>
+<p align="center"><img src="images/regr_scores.jpg" width="600"></p>
 
 The simple Linear Regression model performs quite well with consistent train, test and mean CV scores.  Adding regularisation with the Ridge and Elastic Net models did not alter the results. The Gradient Boosting Regressor model showed significant improvement in R2 scores and errors.
 
@@ -167,7 +167,7 @@ The Classification models have much stronger scores at predicting a designer han
 
 Classifier the best model scores:
 
-![Classifier Models scoring](images/clfbest_scores.jpg)
+<p align="center"><img src="images/clfbest_scores.jpg" width="600"></p>
 
 
 ## Evaluation
