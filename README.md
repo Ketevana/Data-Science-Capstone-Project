@@ -81,24 +81,24 @@ Overall, I've removed all null values except the description column, cleaned eac
 
 * This visualisation shows each data point of Hermes brand in my dataset / comparison of handbag prices
 
-![Hermes data points 3D](images/h3d.gif)
+<p align="center"><img src="images/h3d.gif" width="700"></p> 
 
 * Here are all Louis Vuitton observations / comparison of Mean Retail Price with Resale Price and Discounted Resale Price
 
-![LV data points 3D](images/lv.gif)
+<p align="center"><img src="images/lv.gif" width="700"></p> 
 
 * Here are comparison of 3 prices across each data points of Chanel brand 
 
-![CC data points 3D](images/cc.gif)
+<p align="center"><img src="images/cc.gif" width="700"></p> 
 
 
 Next I performed a thorough EDA to get to know the data, the distributions of the features and the correlations between them.
 
 * Here is representation of features network:
 
-<p align="center"><img src="images/features_network.gif" width="800"></p>
+<p align="center"><img src="images/features_network.gif" width="700"></p>
 
-<p align="center"><img src="images/Network.gif" width="800"></p>
+<p align="center"><img src="images/Networks.gif" width="700"></p>
 
 I have summarised the key findings and plots in the following notebook:
 [EDA_Visuals](Part_3/EDA_Data_Visualizations.ipynb)
@@ -212,7 +212,7 @@ To get the most resale value for your investment bag, invest in the holy trinity
 * Louis Vuitton handbags limited editions
 * Chanel Woc / Classic flaps
 
-![Holy trinity](images/htr.jpg)
+<p align="center"><img src="images/htr.jpg" width="800"></p>
 
 While the value of luxury handbags can fluctuate due to trends or buzz, these three iconic brands in certain styles have the most resale value.
 The Birkin is expected to only increase in value going forward. Its high retail price, limited availability, and strong presence on the secondary market demonstrate that it is still a highly coveted piece. 
@@ -221,7 +221,7 @@ Kelly holds its value well in the secondary market just like the Birkin. Both ba
 
 * Recommended Price for your handbag for Resale
 
-<p align="center"><img src="images/return_recommended_price.gif" width="600"></p>
+<p align="center"><img src="images/return_recommended_price.gif" width="750"></p>
 
 * Project Presentation - [link to presentation](https://docs.google.com/presentation/d/e/2PACX-1vQdfZQnS3l5SRDOtAVq1X5dTu2prK8tpXyrfGv_K-6ku75HGha7y-_RFJH0kjANc6_6hUQetg4o4pPQ/pub?start=true&loop=false&delayms=3000)
 
