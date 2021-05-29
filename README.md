@@ -185,6 +185,8 @@ One of the most standing out coefficient rise in price up to £4,300, is the mea
 
 <p align="center"><img src="images/download-2.png" width="600"></p>
 
+<p align="center"><img src="images/regressions.jpg" width="700"></p>
+
 * Best Classifier Model
 
 The condition of the handbags plays a big part at predicting the return on investment , Hermes brand seems to be the most important feature in all classification models to define the type of investment. Moreover, the handbag being limited edition takes high importance in all classifiers as well. All models are generalising predictions very well and quite equally. The best performance has Gradient Boosting Classifier model with Grid Search.
