@@ -93,6 +93,13 @@ Overall, I've removed all null values except the description column, cleaned eac
 
 
 Next I performed a thorough EDA to get to know the data, the distributions of the features and the correlations between them.
+
+* Here is representation of features network:
+
+<p align="center"><img src="images/features_network.gif" width="800"></p>
+
+<p align="center"><img src="images/Network.gif" width="800"></p>
+
 I have summarised the key findings and plots in the following notebook:
 [EDA_Visuals](Part_3/EDA_Data_Visualizations.ipynb)
 
@@ -152,7 +159,7 @@ I fitted a range of regression models on the training set and obtained R2 scores
 
 Regressor the best model scores:
 
-![Regression Models scoring](images/regr_scores.jpg)
+![Regression Models scoring] <p align="center"><img src="images/regr_scores.jpg" width="400"></p>
 
 The simple Linear Regression model performs quite well with consistent train, test and mean CV scores.  Adding regularisation with the Ridge and Elastic Net models did not alter the results. The Gradient Boosting Regressor model showed significant improvement in R2 scores and errors.
 
