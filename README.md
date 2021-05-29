@@ -221,7 +221,7 @@ Kelly holds its value well in the secondary market just like the Birkin. Both ba
 
 * Recommended Price for your handbag for Resale
 
-![Recommended price_function](images/return_recommended_price.gif)
+<p align="center"><img src="images/return_recommended_price.gif" width="600"></p>
 
 * Project Presentation - [link to presentation](https://docs.google.com/presentation/d/e/2PACX-1vQdfZQnS3l5SRDOtAVq1X5dTu2prK8tpXyrfGv_K-6ku75HGha7y-_RFJH0kjANc6_6hUQetg4o4pPQ/pub?start=true&loop=false&delayms=3000)
 
