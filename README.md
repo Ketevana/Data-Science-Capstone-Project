@@ -94,6 +94,8 @@ Overall, I've removed all null values except the description column, cleaned eac
 
 Next I performed a thorough EDA to get to know the data, the distributions of the features and the correlations between them.
 
+<p align="center"><img src="images/download-1.png" width="500"></p>
+
 * Below we can review the interconnection between features in dataset:
 
 <p align="center"><img src="images/Networks.gif" width="700"></p>
@@ -173,7 +175,31 @@ Classifier the best model scores:
 
 ## Evaluation
 
-Examples of the best models and evaluation can be found in the following notebook:
+*Best Regression Model
+
+The residuals plot from YellowBrick shows the error against the predicted value for the training data and the testing data. It allows us to look for heteroskedasticity in the model; e.g. regions in the target where the error is greatest. The residuals appear to be relatively randomly distibuted, though the models appears to have a tendency to underestimate the highest values.
+
+<p align="center"><img src="images/download.png" width="500"></p>
+
+One of the most standing out coefficient rise in price up to £4,300, is the mean Retail price (official store price), it means that the higher the original handbag price the more it can elevate in value for resale on Secondary market platform. Chanel brand has lots of indicators showing that it losses the value up to ~ £400. Model 2.55 has the highest impact on the price across Chanel brand. Never worn condition continues to demonstrate its improvement as a positive indicator, whereas good, fair and vintage condition are dropping the resale price down to ~ £300. Strong positive coefficients have small Hermes handbags like Kelly 25, Birkin 25 and Birkin 30, nevertheless Kelly 28 and Birkin 35 also have worthwhile effect on resale price.
+
+<p align="center"><img src="images/download-2.png" width="500"></p>
+
+*Best Classifier Model
+
+The condition of the handbags plays a big part at predicting the return on investment , Hermes brand seems to be the most important feature in all classification models to define the type of investment. Moreover, the handbag being limited edition takes high importance in all classifiers as well. All models are generalising predictions very well and quite equally. The best performance has Gradient Boosting Classifier model with Grid Search.
+
+<p align="center"><img src="images/download-17.png" width="500"></p>
+
+In terms of predicting whether the purchase is a good investment or not, it is better to have higher Precision score. In this case it will reduce the probability to make a wrong purchase and have more benefits for investors.
+
+The trade off of having higher Precision score, means to reduce Recall score, therefore it will produce more False Negatives , which is better than derive more False Positives. It's more profitable choice for customers who wants to make returns on their investments, because assigning a handbag as a good investment while it's not, will have a big impact on ROI for the customers. 
+
+<p align="center"><img src="images/download-15.png" width="500"></p>
+
+<p align="center"><img src="images/roc_auc.jpg" width="900"></p>
+
+For more examples of the best models and evaluation can be found in the following notebook:
 [Modelling_findings](Part_4/Predictive_Models_Findings_Technical_Report.ipynb)
 
 
