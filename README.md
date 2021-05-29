@@ -213,7 +213,7 @@ To get the most resale value for your investment bag, invest in the holy trinity
 * Louis Vuitton handbags limited editions
 * Chanel Woc / Classic flaps
 
-<p align="center"><img src="images/htr.jpg" width="800"></p>
+<p align="center"><img src="images/htr.jpg" width="600"></p>
 
 While the value of luxury handbags can fluctuate due to trends or buzz, these three iconic brands in certain styles have the most resale value.
 The Birkin is expected to only increase in value going forward. Its high retail price, limited availability, and strong presence on the secondary market demonstrate that it is still a highly coveted piece. 
