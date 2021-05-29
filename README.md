@@ -199,7 +199,7 @@ The trade off of having higher Precision score, means to reduce Recall score, th
 
 <p align="center"><img src="images/download-15.png" width="600"></p>
 
-<p align="center"><img src="images/roc_auc.jpg" height="600"></p>
+<p align="center"><img src="images/roc_auc.jpg" width="900"></p>
 
 For more examples of the best models and evaluation can be found in the following notebook:
 [Modelling_findings](Part_4/Predictive_Models_Findings_Technical_Report.ipynb)
