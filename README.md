@@ -206,7 +206,7 @@ For more examples of the best models and evaluation can be found in the followin
 
 #### Deep learning model using TensorFlow
 
-Deep learning technique showed great results, right after 2 epochs, the accuracy score and cross validation scores were already above 0.8257 and 0.8217 respectively. It had 4 hidden layers, 'relu' / 'softmax' activation methods and Adam optimizer.
+Deep learning technique showed great results at distinguishing a good investment from a bad one. Right after 2 epochs, the accuracy score and cross validation scores were already above 0.8257 and 0.8217 respectively. It had 4 hidden layers, 'relu' / 'softmax' activation methods and Adam optimizer.
 
 * Plot of improvement process of the scores 
 
