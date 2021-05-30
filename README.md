@@ -204,13 +204,13 @@ The trade off of having higher Precision score, means to reduce Recall score, th
 For more examples of the best models and evaluation can be found in the following notebook:
 [Modelling_findings](Part_4/Predictive_Models_Findings_Technical_Report.ipynb)
 
-#### Deep learning model using TensorFlow
+### Deep learning model using TensorFlow
 
 Deep learning technique showed great results at distinguishing a good investment from a bad one. Right after 2 epochs, the accuracy score and cross validation scores were already above 0.8257 and 0.8217 respectively. It had 4 hidden layers, 'relu' / 'softmax' activation methods and Adam optimizer.
 
 * Plot of improvement process of the scores 
 
-<p align="center"><img src="images/tf_scores.png" width="600"></p>
+<p align="center"><img src="images/tf_scores.png" width="500"></p>
 
 
 ### Limitations
